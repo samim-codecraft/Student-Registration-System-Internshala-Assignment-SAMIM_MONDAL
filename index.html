@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System - BY SAMIM MONDAL for Intershala Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- this is the heading of the page  -->
+    <h1>Student Registration System</h1> 
+    <!-- this is Short description about system of registration  -->
+    <div class="summary"> 
+        <p>Student Registration System is developed with an objective that management of student information shall be made as streamlined as possible. The system has increased the user-friendly registration process with respect to information like names, classes, address, and contact number of students. There is a provision for editing and deleting the existing records so that data will be an error-free and latest one. Simple user interface makes the procedure simple and facilitates easy control over the handling of student information in general.</p>
+    </div>
+     <!-- this section represent the whole registraion system -->
+    <section class="main-container">
+        <div class="box-container">
+             <!-- this is the form of registration  -->
+            <form  id="student-form">
+                <p>Student Registration</p>
+                <div class="row">
+                    <label for="student-name">Student Name</label>
+                    <input type="text" placeholder="Enter Student Name.." id="student-name" required>
+                </div>
+                <div class="row">
+                    <label for="student-id">Student Id</label>
+                    <input type="number" placeholder="Enter Student Id.." id="student-id" required>
+                </div>
+                <div class="row">
+                    <label for="email">Email Id</label>
+                    <input type="email" placeholder="Enter Email Id.." id="email" required>
+                </div>
+                <div class="row">
+                    <label for="contact">Contact No</label>
+                    <input type="tel" placeholder="Enter Contact No .." id="contact" required pattern="[0-9]{10}">
+                </div>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+         <!-- this section show registered student details in a table form  -->
+        <div class="box-container">
+            <div class="table-container">
+                <div class="table-header">
+                    <div>Student Id</div>
+                    <div>Name</div>
+                    <div>Email Id</div>
+                    <div>Contact No.</div>
+                    <div>Action</div>
+                </div>
+                <div class="table-body" id="table-body">
+                  <!-- table body row will be created by app.js  -->
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+   <script src="app.js"></script>
+</body>
+</html>
